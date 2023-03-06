@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+
+var eng=+prompt("Your marks obtained in English Subject out of 100")
+var urdu=+prompt("Your marks obtained in Urdu Subject out of 100")
+var math=+prompt("Your marks obtained in Math Subject out of 100")
+var totObt=eng+math+urdu
+var tot=100*3
+var per= totObt*100/300
+
+if(per>=80){
+    document.write("Total marks :" +tot)
+    document.write("Marks obtained :" +totObt)
+    document.write("Percentage :" +per)
+    document.write("Grade : A-one")
+    document.write("Remarks : Excellent")
+}
+else if(per>=70){
+    document.write("Total marks :" +tot)
+    document.write("Marks obtained :" +totObt)
+    document.write("Percentage :" +per)
+    document.write("Grade : A")
+    document.write("Remarks : Good")
+}
+else if(per>=60){
+    document.write("Total marks :" +tot)
+    document.write("Marks obtained :" +totObt)
+    document.write("Percentage :" +per)
+    document.write("Grade : B")
+    document.write("Remarks : You need to improve")
+}
+if(per<60){
+    document.write("Total marks :" +tot)
+    document.write("Marks obtained :" +totObt)
+    document.write("Percentage :" +per)
+    document.write("Grade : Fail")
+    document.write("Remarks : Sorry")
+}
+
+    </script>
+</body>
+</html>
